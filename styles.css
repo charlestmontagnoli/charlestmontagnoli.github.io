@@ -38,6 +38,10 @@ h5 {
     text-align: left;
 }
 
+a {
+    color: black;
+}
+
 .centerimg {
     max-width: 100%;
     display: flex;
