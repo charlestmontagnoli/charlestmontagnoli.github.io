@@ -23,6 +23,7 @@ h3 {
 }
 
 .centerimg {
+    max-width: 100%;
     display: flex;
     flex: auto;
     flex-direction: column;
