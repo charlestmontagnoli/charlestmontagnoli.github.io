@@ -30,6 +30,14 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    color: white;
+    flex: auto;
+    font-weight: normal;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    text-align: left;
+}
+
 .centerimg {
     max-width: 100%;
     display: flex;
