@@ -55,6 +55,24 @@ a {
     align-items: center;
 }
 
+.bigimg {
+    max-width: 30%;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -65,6 +83,10 @@ a {
 }
 .page-main {
     flex-grow: 1;
+}
+
+.page-footer {
+    flex: 1;
 }
 
 .page-header nav {
