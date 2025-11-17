@@ -1,440 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>Charles T. Montagnoli</title>
+    
+    <title>Charles T. Montagnoli - Portfolio</title>
 </head>
- 
+
 <body>
-
-    <div class="wrapper">
-        <header id="page-header" class="page-header">
-            <nav>
-                <h2 class="logo">
-                    <font face="Verdana"
-                    size="4" color=black>
-                    About Me
-                    </font>
-                </h2>
-                <ul>
-                    <a href="#resume"style="text-decoration:none">
-                        <font face="Verdana"
-                                        size="4" color=black>
-                                        Resume
-                                </font>
-                     </a>
-                    <a href="#Experience"style="text-decoration:none">
-                        <font face="Verdana"
-                                        size="4" color=black>
-                                        Experience
-                                </font>
-                     </a>
-                    <a href="#projects"style="text-decoration:none">
-                        <font face="Verdana"
-                                        size="4" color=black>
-                                        Projects
-                                </font>
-                     </a>
-                    <a href="#Master's Thesis"style="text-decoration:none">
-                        <font face="Verdana"
-                                        size="4" color=black>
-                                        Thesis
-                                </font>
-                     </a>
-                    <a href="#links"style="text-decoration:none">
-                        <font face="Verdana"
-                                        size="4" color=black>
-                                        Contact
-                                </font>
-                     </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#about">Charles T. Montagnoli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thesis">Thesis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
                 </ul>
-              </nav>
-        </header>
-        <main class="page-main">
-          <nav>
-            <h4>
-                <font face="Verdana"
-                                        size="7" color=black>
-                                        Charles T. Montagnoli
-                                    </font>
-                                    </h4>
-            <hr color="black" width="90">
-            <div  class="centerimg">
-                <img src="img2.jpg">
             </div>
-            
-            <h3>
-            <hr color="black">
-            I am a mechanical engineer with experience in robotic systems, software development, machine learning, and project managemet.
-            I have a Master's Degree in Mechanical Engineering, during which I wrote a thesis
-            using Deep Learning for Situational Awareness of Autonomous Vessels.
-            <hr color="black">
+        </div>
+    </nav>
 
-            I have experience developing autonomous sytems mainly in C++ and Python. I have experience working in Python with Tensorflow, Keras, 
-            and Pandas for machine learning development.
-            Alongside this experience I know Sensor Integration, Data Management,
-            LINUX and some database tools.
-            <hr color="black">
+    <!-- Hero Section -->
+    <section id="about" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold mb-4">Charles T. Montagnoli</h1>
+                    <div class="profile-image-container mb-4">
+                        <img src="img2.jpg" alt="Charles T. Montagnoli" class="img-fluid rounded-circle shadow" style="max-width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            Additionally, I have experience with engineering design tools like AutoCAD, Revit, and Agi32. I have worked as an engingeering project manager where I oversee the coordination and development of various engineering projects.
-            In this role I have grown to better work with different engineering teams across different disciplines.
-            <hr color="black">
+    <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <p class="lead">
+                                I am a mechanical engineer with experience in robotic systems, software development, machine learning, and engineering project management.
+                                I have a Bachelor's and Master's Degree in Mechanical Engineering, during which I wrote a thesis
+                                using Deep Learning for Situational Awareness of Autonomous Vessels.
+                            </p>
+                            <hr>
+                            <p class="lead">
+                                I have experience developing autonomous systems mainly in C++ and Python. I have experience working in Python with TensorFlow, Keras,
+                                and Pandas for machine learning development.
+                                Alongside this experience I know Sensor Integration, Data Management,
+                                LINUX and some database tools.
+                            </p>
+                            <hr>
+                            <p class="lead">
+                                Additionally, I have experience with engineering design tools like AutoCAD, Revit, and AGi32. I have worked as an engineering project manager where I oversee the coordination and development of various engineering projects.
+                                In this role I have grown to better work with different engineering teams across different disciplines.
+                            </p>
+                            <hr>
+                            <p class="lead">
+                                This website is meant to be a landing page for information on my projects, both past and present, as well as information like my resume and prior experiences.
+                            </p>
+                            <p class="lead">
+                                If you have any questions please feel free to reach out to me at the email found at the bottom of this webpage.
+                            </p>
+                            <p class="lead mb-0">
+                                Cheers,<br>
+                                <strong>Charles</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            This website is meant to be a landing page for information on my projects, both past and present, as well as information like my resume and prior experiences.
-
-            
-            If you have any questions please feel free to reach out to me at the email found at the bottom of this webpage.
-            <hr color="black">
-            Cheers,
-            <br>
-            <b>Charles</b></h3>
-            </nav>
-            <h4 id="Experience">
-                <font face="Verdana"
-                                        size="7" color=black>
-                                        Experience
-                                    </font>
-                                    </h4>
-                                    <hr color="black" width="90">
-            <h5>
-                <font face="Verdana" size="4" color="black">
-                    <ul>
-                        <li>
-                            <b>Engineering Project Manager, NYCDOT</b>
-                            <ul>
-                                
-                                    2024 - Present
-                                
-                                <li>
-                                    Coordinate with engineers and clients to review, edit, and approve mechanical and electrical engineering designs
-                                </li>
-                                <li>
-                                    Ensurethatsubmitted designs meet all NYC DOT engineering design criteria and create changes where necessary.
-                                </li>
-                                <li>
-                                    UseAutoCADtocreateengineering drawings, review submitted designs, and make changes to in-progress models.
-                                </li>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Experience</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <!-- Experience 1 -->
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Engineering Project Manager</h4>
+                            <h5 class="text-muted mb-3">NYCDOT | 2024 - Present</h5>
+                            <ul class="list-unstyled ms-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Coordinate with engineers and clients to review, edit, and approve mechanical and electrical engineering designs</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Ensure that submitted designs meet all NYC DOT engineering design criteria and create changes where necessary</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Use AutoCAD to create engineering drawings, review submitted designs, and make changes to in-progress models</li>
                             </ul>
-                        </li>
-                        <li>
-                            <b>Autonomy Engineer I, Pratt Miller Engineering</b>
-                            <ul>
-                                
-                                    2023 - 2024
-                               
-                                <li>
-                                    Developed Successful Algorithms for Autonomous Vehicle Operation, including LIDAR PointCloud Filtering and Feature Extraction in C++, Python & ROS.
-                                </li>
-                                <li>
-                                    Worked with Wide-Angle Camera Data to Create Scripts for Autonomous Tasks and User Visualization.
-                                </li>
-                                <li>
-                                    Worked Remotely in a Small, Agile Team of Developers to Advance Autonomous Capabilities.
-                                </li>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Autonomy Engineer I</h4>
+                            <h5 class="text-muted mb-3">Pratt Miller Engineering | 2023 - 2024</h5>
+                            <ul class="list-unstyled ms-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Developed Successful Algorithms for Autonomous Vehicle Operation, including LIDAR PointCloud Filtering and Feature Extraction in C++, Python & ROS</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Worked with Wide-Angle Camera Data to Create Scripts for Autonomous Tasks and User Visualization</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Worked Remotely in a Small, Agile Team of Developers to Advance Autonomous Capabilities</li>
                             </ul>
-                        </li>
+                        </div>
+                    </div>
 
-                        <li>
-                            <b>Autonomy Intern, Pratt Miller Engineering</b>
-                            <ul>
-                                
-                                    Summer 2022
-                                
-                                <li>
-                                    Developed algorithms in Python for autonomous map traversal using GeoSpatial data from ArcGIS and QGIS.
-                                </li>
-                                <li>
-                                    Developed an A-Star Search algorithm for finding the optimal route to a goal using C++.
-                                </li>
+                    <!-- Experience 3 -->
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Autonomy Intern</h4>
+                            <h5 class="text-muted mb-3">Pratt Miller Engineering | Summer 2022</h5>
+                            <ul class="list-unstyled ms-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Developed algorithms in Python for autonomous map traversal using GeoSpatial data from ArcGIS and QGIS</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Developed an A-Star Search algorithm for finding the optimal route to a goal using C++</li>
                             </ul>
-                        </li>
+                        </div>
+                    </div>
 
-                        <li>
-                            <b>Graduate Research Assistant, Embry-Riddle Aeronautical University</b>
-                            <ul>
-                                
-                                    2020 - 2023
-                                
-                                <li>
-                                    Integration and use of both LiDAR and Cameras into a sensor suite for data collection and autonomous operations.
-                                </li>
-                                <li>
-                                    Researched Deep Learning Methods related to Computer Vision.
-                                </li>
-                                <li>
-                                    Performed analysis of a Semantic Segmentation Deep Learner on HDR Imagery for the purpose of Autonomous Vessel Situational Awareness.
-                                </li>
+                    <!-- Experience 4 -->
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Graduate Research Assistant</h4>
+                            <h5 class="text-muted mb-3">Embry-Riddle Aeronautical University | 2020 - 2023</h5>
+                            <ul class="list-unstyled ms-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Integration and use of both LiDAR and Cameras into a sensor suite for data collection and autonomous operations</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Researched Deep Learning Methods related to Computer Vision</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Performed analysis of a Semantic Segmentation Deep Learner on HDR Imagery for the purpose of Autonomous Vessel Situational Awareness</li>
                             </ul>
-                        </li>
+                        </div>
+                    </div>
 
-                        <li>
-                            <b>Graduate Teaching Assistant, Embry-Riddle Aeronautical University</b>
-                            <ul>
-                                
-                                    Fall, 2021
-                                
-                                <li>
-                                    Taught lectures and ran labs for a group of senior Mechanical Engineering students in Model-Based Control Systems.
-                                </li>
+                    <!-- Experience 5 -->
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Graduate Teaching Assistant</h4>
+                            <h5 class="text-muted mb-3">Embry-Riddle Aeronautical University | Fall 2021</h5>
+                            <ul class="list-unstyled ms-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Taught lectures and ran labs for a group of senior Mechanical Engineering students in Model-Based Control Systems</li>
                             </ul>
-                        </li>
+                        </div>
+                    </div>
 
-                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                </font>
-            </h5>
-            <nav>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow border-0">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0 px-0">
+                                            <a href="https://robotx.org/2022/11/22/2022-robotx-maritime-challenge-final-standings/" target="_blank" class="text-decoration-none fs-5">
+                                                <i class="bi bi-trophy-fill text-warning me-2"></i>Maritime RobotX Challenge Champion
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item border-0 px-0">
+                                            <a href="https://commons.erau.edu/edt/735/" target="_blank" class="text-decoration-none fs-5">
+                                                <i class="bi bi-book-fill text-primary me-2"></i>Master's Thesis
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item border-0 px-0">
+                                            <a href="https://github.com/osrf/vrx" target="_blank" class="text-decoration-none fs-5">
+                                                <i class="bi bi-github text-dark me-2"></i>OSRF VRX 2021 Competition
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item border-0 px-0">
+                                            <a href="https://github.com/charlestmontagnoli/project-work/tree/main/cc-fraud-detection" target="_blank" class="text-decoration-none fs-5">
+                                                <i class="bi bi-credit-card-fill text-danger me-2"></i>Credit Card Fraud Mini-Project
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img.jpg" alt="Project" class="img-fluid rounded-end h-100" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            </nav>
-        </main>
-      </div>
- 
- 
-    <!--Projects(start)-->
-    <table id="projects" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#d8dbdb">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td height="180" align="center"
-                            valign="middle" colspan="2">
-                            <font face="Verdana" size="7"
-                                color="black">
-                                Projects
-                            </font>
-                            <hr color="black" width="90">
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td height="10">
-                            <font face="Times New Roman"
-                                size="5" color="black">
-                                <ul>
-                                    <li>
-                                        <a href="https://robotx.org/2022/11/22/2022-robotx-maritime-challenge-final-standings/" target="_blank"
-                                           style="text-decoration:none">
-                                           Maritime RobotX Challenge Champion ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        <a href="https://commons.erau.edu/edt/735/" target="_blank"
-                                           style="text-decoration:none"
-                                            color="#c2c0c3">
-                                            Master's Thesis ➲
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        <a href="https://github.com/osrf/vrx" target="_blank"
-                                           style="text-decoration:none"
-                                            color="#c2c0c3">
-                                            OSRF VRX 2021 Competition ➲
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        <a href="https://github.com/charlestmontagnoli/project-work/tree/main/cc-fraud-detection" target="_blank"
-                                           style="text-decoration:none"
-                                            color="#c2c0c3">
-                                            Credit Card Fraud Mini-Project ➲
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </font>
-                        </td>
- 
-                        <td width="45%">
-                            <img src="img.jpg"
-                                 alt="Project" width="100%">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!--Projects(end)-->
- 
-    <!--Achievement(start)-->
-    <table id="Multi Modal Sensor Suite" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#d8dbdb">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td height="180" align="center"
-                            valign="middle" colspan="2">
-                            <font face="Verdana" size="7"
-                                color="black">
-                                Multi-Modal Sensor Suite
-                            </font>
-                            <hr color="black" width="90">
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td height="10">
-                            <font face="Times New Roman"
-                                size="5" color="black">
-                                While at school,  I worked on a Multi-Modal Sensor Suite for Autonomous Vessel operation. This sensor suite was used in conjunction
-                                with an autonomous 16-foot WAM-V (Wave Adaptive Modular Vessel) robot to collect data and create autonomous tasking software.
-                                This sensor suite contained 6 cameras (Three 4k Resolution Cameras, Two LWIR Cameras, and One HDR Camera) and 3 LiDAR (Three Livox Horizon)
-                                that collected data and provided crucial situational awareness data for the WAM-V. I worked closesly with this sensor suite, including making 
-                                decisions on sensor mounting locations and creating data pipelines for data ingestion. Using this data and the autonomy software it enabled, my school's Maritime Robotx Challenge Team
-                                was able to take home first place and over $30,000 in prizing at the 2022 Mairitme RobotX Challenge in Sydney, AUS. Additionally, I used the data from
-                                the cameras to perform research for the Office of Naval Research under a NEEC Grant, and perform the study outlined in my Master's Thesis down below.
-                            </font>
-                        </td>
-                        <td width="45%">
-                            <img src="enclosure_labeled.png"
-                                alt="Multi Modal Sensor Suite" width="100%">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!--Achievement(end)-->
-
-    <!--Achievement(start)-->
-    <table id="Master's Thesis" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#d8dbdb">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td height="180" align="center" valign="middle">
-                            <font face="Verdana" size="7" color="black">
-                                Master's Thesis
-                                <hr color="black" width="100">
-                            </font>
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td>
-                            <font face="Verdana" size="5" color="black">
-                                <ul>
-
-                                    <b>Deep Learning of Semantic Image Labels on HDR Imagery in a Maritime Environment</b>
-                                </ul>
-                            <ul><u>Abstract:</u>
-                                <p>Situational awareness in the maritime environment can be extremely challenging. The maritime environment is highly dynamic and largely undefined, requiring the perception of many potential hazards in the shared maritime environment. One particular challenge is the effect of direct-sunlight exposure and specular reflection causing degradation of camera reliability. It is for this reason then, in this work, the use of High-Dynamic Range imagery for deep learning of semantic image labels is studied in a littoral environment. This study theorizes that the use HDR imagery may be extremely beneficial for the purpose of situational awareness in maritime environments due to the inherent advantages of the technology. This study creates labels for a multi-class semantic segmentation process, and performs well on water and horizon identification in the littoral zone. Additionally, this work contributes proof that water can be reasonably identified using HDR imagery with semantic networks, which is useful for determining the navigable regions for a vessel. This result is a basis on which to build further semantic segmentation work upon in this environment, and could be further improved upon in future works with the introduction of additional data for multi-class segmentation problems.
+    <!-- Multi-Modal Sensor Suite Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <h2 class="display-5 text-center mb-4">Multi-Modal Sensor Suite</h2>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <p class="lead">
+                                        While at school, I worked on a Multi-Modal Sensor Suite for Autonomous Vessel operation. This sensor suite was used in conjunction
+                                        with an autonomous 16-foot WAM-V (Wave Adaptive Modular Vessel) robot to collect data and create autonomous tasking software.
+                                        This sensor suite contained 6 cameras (Three 4k Resolution Cameras, Two LWIR Cameras, and One HDR Camera) and 3 LiDAR (Three Livox Horizon)
+                                        that collected data and provided crucial situational awareness data for the WAM-V.
                                     </p>
-                            </ul>
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!--Achievement(end)-->
+                                    <p class="lead">
+                                        I worked closely with this sensor suite, including making decisions on sensor mounting locations and creating data pipelines for data ingestion. Using this data and the autonomy software it enabled, my school's Maritime RobotX Challenge Team
+                                        was able to take home first place and over $30,000 in prizing at the 2022 Maritime RobotX Challenge in Sydney, AUS. Additionally, I used the data from
+                                        the cameras to perform research for the Office of Naval Research under a NEEC Grant, and perform the study outlined in my Master's Thesis below.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="enclosure_labeled.png" alt="Multi Modal Sensor Suite" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
- 
- 
-    <!--links(start)-->
-    <table id="links" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#d8dbdb">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="90%" align="center">
-                    <tr>
-                        <td width="20%" valign="top">
-                            <font face="Verdana" size="3" color="black">
-                                <b>LinkedIn</b>
-                                <br>
-                            </font>
-                            <a href="https://www.linkedin.com/in/ctmont/"  target="_blank" style="text-decoration:none">
-                                www.linkedin.com/in/ctmont/
+    <!-- Thesis Section -->
+    <section id="thesis" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Master's Thesis</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Deep Learning of Semantic Image Labels on HDR Imagery in a Maritime Environment</h3>
+                            <h5 class="text-decoration-underline mb-3">Abstract:</h5>
+                            <p class="lead">
+                                Situational awareness in the maritime environment can be extremely challenging. The maritime environment is highly dynamic and largely undefined, requiring the perception of many potential hazards in the shared maritime environment. One particular challenge is the effect of direct-sunlight exposure and specular reflection causing degradation of camera reliability. It is for this reason then, in this work, the use of High-Dynamic Range imagery for deep learning of semantic image labels is studied in a littoral environment. This study theorizes that the use HDR imagery may be extremely beneficial for the purpose of situational awareness in maritime environments due to the inherent advantages of the technology. This study creates labels for a multi-class semantic segmentation process, and performs well on water and horizon identification in the littoral zone. Additionally, this work contributes proof that water can be reasonably identified using HDR imagery with semantic networks, which is useful for determining the navigable regions for a vessel. This result is a basis on which to build further semantic segmentation work upon in this environment, and could be further improved upon in future works with the introduction of additional data for multi-class segmentation problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Contact</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <div class="row text-center g-4">
+                                <div class="col-md-4">
+                                    <i class="bi bi-linkedin fs-1 text-primary mb-3 d-block"></i>
+                                    <h5 class="fw-bold">LinkedIn</h5>
+                                    <a href="https://www.linkedin.com/in/ctmont/" target="_blank" class="text-decoration-none">
+                                        linkedin.com/in/ctmont
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <i class="bi bi-github fs-1 text-dark mb-3 d-block"></i>
+                                    <h5 class="fw-bold">GitHub</h5>
+                                    <a href="https://charlestmontagnoli.github.io" target="_blank" class="text-decoration-none">
+                                        charlestmontagnoli.github.io
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <i class="bi bi-envelope-fill fs-1 text-danger mb-3 d-block"></i>
+                                    <h5 class="fw-bold">Email</h5>
+                                    <a href="mailto:charles.montagnoli@gmail.com" class="text-decoration-none">
+                                        charles.montagnoli@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <h3 class="mb-4">Download My Resume</h3>
+                            <a href="Charles Resume 2025.pdf" target="_blank" class="btn btn-success btn-lg">
+                                <i class="bi bi-download me-2"></i>Download Resume
                             </a>
-                        </td>
- 
-                        <td>
-                            |
-                        </td>
- 
-                        <td width="20%" valign="top">
-                            <font face="Verdana" size="3" color="black">
-                                <b>GitHub</b>
-                                <br>
-                            </font>
-                            <a href="charlestmontagnoli.github.io" target="_blank" style="text-decoration:none">
-                                charlestmontagnoli.github.io 
-                            </a>
-                        </td>
- 
-                        <td>
-                            |
-                        </td>
- 
-                        <td width="20%" valign="top">
-                            <font face="Verdana" size="3" color="black">
-                                <b>Email</b>
-                                <br>
-                            </font>
-                            <a href="mailto:charles.montagnoli@gmail.com" target="_blank" style="text-decoration:none">
-                                charles.montagnoli@gmail.com
-                            </a>
-                        </td>
- 
-                        <td>
-                            |
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!--links(end)-->
- 
- 
-    <!--resume(start)-->
-    <table id="resume" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#d8dbdb">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="90%" align="center">
-                    <tr>
-                        <td width="80%" valign="top">
-                            <font face="Verdana"
-                                color="#4CAF50" size="6">
-                                <a href="Charles_Resume_2024.pdf" target="_blank" >Download Resume</a>
-                            </font>
-                        </td>
- 
-                        <td width="10%">
-                            <font face="arial" color="black" size="5">
-                                <a href="#page-header" style="text-decoration:none">
-                                    <font face="Verdana" color="black" size="6">
-                                        <b>TOP ☝</b>
-                                    </font>
-                                </a>
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <!--resume(end)-->
- 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Charles T. Montagnoli. All rights reserved.</p>
+            <a href="#about" class="btn btn-outline-light btn-sm mt-3">
+                <i class="bi bi-arrow-up-circle me-2"></i>Back to Top
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
- 
+
 </html>
